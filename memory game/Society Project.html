@@ -244,13 +244,13 @@
 
 
   <script >
-     /* var Music2;
+      var Music2;
           function matchingMusic()
           {
             
-              Music2 = new Audio("music.mp3");
-              myMusic.play();
-          }*/
+              Music2 = new Audio("matchSound.wav");
+              Music2.play();
+          }
       var startValid=0;
     const cards = document.querySelectorAll('.memory-card');
     var no =0;  
@@ -262,6 +262,7 @@
     function flipCard() {
        if (startValid===1)
         {
+            flipmusic();
         if(!lock)
         {
             return;
@@ -287,6 +288,7 @@
         console.log(second_card.id);
         if(first_card.id===second_card.id)
         {
+            matchingMusic();
            first_card.removeEventListener('click', flipCard);
            second_card.removeEventListener('click', flipCard);
            lock=true;
@@ -345,12 +347,19 @@ cards.forEach(card => card.addEventListener('click', flipCard));
               value = 0;
               timerInterval = setInterval(changeValue, 1000);  
             }
-            var myMusic;
+            var myflipMusic;
+      
+        function flipmusic()
+          {
+            
+              myflipMusic = new Audio("flipSound.wav");
+              myflipMusic.play();
+          }
           function music()
           {
             
-              myMusic = new Audio("music.mp3");
-               myMusic.loop = true;
+              myMusic = new Audio("gameMusic.wav");
+              myMusic.loop = true;
               myMusic.play();
           }
             var stop = function() {
