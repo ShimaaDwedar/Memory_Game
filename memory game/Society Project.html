@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Memory Game</title>
+
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css" media="screen">
+      <link rel="stylesheet" href="_bootswatch.scss"> 
+      <link rel="stylesheet" href="_variables.scss"> 
+      <link rel="stylesheet" href="bootstrap.min.css"> 
+     <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" onclick="a()" style="cursor: pointer;">Home <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="http://www.google.com"target="_blank">Google</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.facebook.com"target="_blank">facebook</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://www.twitter.com"target="_blank">twitter</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="jumbotron">
+  <h1 class="display-3">Puzzle Game!</h1>
+  
+  <hr class="my-4">
+     <div class="pr">
+  <p> &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;Find the pair!</p></div>
+     <div class="help">
+  <section class="game">
+    <div class="memory-card" id="القدس">
+      <img class="front-face"  src="images/card9.jpg"  />
+      <img class="back-face" src="images/card.jpeg"/>
+    </div>
+      <div class="memory-card" id="القدس">
+      <img class="front-face"  src="images/card9.jpg"  />
+      <img class="back-face" src="images/card.jpeg"/>
+    </div>
+      
+    <div class="memory-card" id="رأم_الله">
+      <img class="front-face"  src="images/card14.jpg"/>
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+     <div class="memory-card" id="رأم_الله">
+      <img class="front-face"  src="images/card14.jpg"/>
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+    <div class="memory-card" id="نابلس">
+      <img class="front-face"  src="images/card13.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="نابلس">
+      <img class="front-face"  src="images/card13.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+    <div class="memory-card" id="بيت_لحم">
+      <img class="front-face"  src="images/card12.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+    <div class="memory-card" id="بيت_لحم">
+      <img class="front-face"  src="images/card12.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+    <div class="memory-card" id="غزة">
+      <img class="front-face" src="images/card11.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="غزة">
+      <img class="front-face" src="images/card11.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+    <div class="memory-card" id="أريحا">
+      <img class="front-face" src="images/card15.jpg" />
+      <img class="back-face" src="images/card.jpeg"/>
+    </div>
+      <div class="memory-card" id="أريحا">
+      <img class="front-face" src="images/card15.jpg" />
+      <img class="back-face" src="images/card.jpeg"/>
+    </div>
+      
+
+    <div class="memory-card" id="جنين">
+      <img class="front-face" src="images/card16.jpeg"/>
+      <img class="back-face"src="images/card.jpeg"/>
+    </div>
+      <div class="memory-card" id="جنين">
+      <img class="front-face" src="images/card16.jpeg"/>
+      <img class="back-face"src="images/card.jpeg"/>
+    </div>
+      
+    <div class="memory-card" id="صفد">
+      <img class="front-face" src="images/card17.jpeg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="صفد">
+      <img class="front-face" src="images/card17.jpeg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+
+    <div class="memory-card" id="بئر_السبع">
+      <img class="front-face" src="images/card18.jpeg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="بئر_السبع">
+      <img class="front-face" src="images/card18.jpeg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+    <div class="memory-card" id="الناصرة">
+      <img class="front-face" src="images/card19.jpeg" />
+      <img class="back-face" src="images/card.jpeg"/>
+    </div>
+      <div class="memory-card" id="الناصرة">
+      <img class="front-face" src="images/card19.jpeg" />
+      <img class="back-face" src="images/card.jpeg"/>
+    </div>
+
+    <div class="memory-card" id="حيفا">
+      <img class="front-face" src= "images/card10.jpg"/>
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="حيفا">
+      <img class="front-face" src="images/card10.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+    <div class="memory-card" id="يافا">
+      <img class="front-face" src="images/card8.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="يافا">
+      <img class="front-face" src="images/card8.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+      <div class="memory-card" id="الخليل">
+      <img class="front-face" src="images/card7.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="الخليل">
+      <img class="front-face" src="images/card7.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+      <div class="memory-card" id="طولكرم">
+      <img class="front-face" src="images/card6.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="طولكرم">
+      <img class="front-face" src="images/card6.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+      <div class="memory-card" id="الرًملة">
+      <img class="front-face" src="images/card5.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="الرًملة">
+      <img class="front-face" src="images/card5.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+      <div class="memory-card" id="اللد"ً>
+      <img class="front-face" src="images/card4.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="اللد"ً>
+      <img class="front-face" src="images/card4.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+      <div class="memory-card" id="طبريا">
+      <img class="front-face" src="images/card3.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="طبريا">
+      <img class="front-face" src="images/card3.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      
+      <div class="memory-card" id="سناء">
+      <img class="front-face" src="images/card2.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+      <div class="memory-card" id="سناء">
+      <img class="front-face" src="images/card2.jpg" />
+      <img class="back-face" src="images/card.jpeg" />
+    </div>
+     
+  </section>
+         
+        <div class="infomation">
+      <div class="button_div" >
+          <button id="st" type="button"  class="btn btn-primary btn-lg" onclick="more()" value="Start Play Game" >Start Play Game</button>
+          <button id="re"type="button"  class="btn btn-primary btn-lg" onclick="replace2()" style="visibility:hidden">Restart</button>
+          <br>
+          <br>
+          <label >Time</label>
+           <span id="demo">0  </span>
+          
+             </div>
+      
+             
+      
+      
+  </div>
+         
+        </div>
+        
+        
+        <p class="lead">
+        <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+       <button id="stop" class="btn btn-primary btn-lg" onclick="moreStop()" disabled  >Solve</button>
+          </p>
+        
+         
+       
+        
+    
+        
+    </div>
+    
+    
+
+
+  <script >
+     /* var Music2;
+          function matchingMusic()
+          {
+            
+              Music2 = new Audio("music.mp3");
+              myMusic.play();
+          }*/
+      var startValid=0;
+    const cards = document.querySelectorAll('.memory-card');
+    var no =0;  
+    let make_sure = true;
+    let first_card, second_card;
+    let lock=true;
+       let help1=false;
+      let help2=false;
+    function flipCard() {
+       if (startValid===1)
+        {
+        if(!lock)
+        {
+            return;
+        }
+    if(this===first_card)
+        {
+            return;
+        }
+  this.classList.add('flip');
+     if(make_sure)
+    {
+        first_card=this;
+        make_sure=false;
+        help1=true;
+        return;
+    }
+    
+    else
+        {
+        second_card=this;
+        help2=false;
+        console.log(first_card.id);
+        console.log(second_card.id);
+        if(first_card.id===second_card.id)
+        {
+           first_card.removeEventListener('click', flipCard);
+           second_card.removeEventListener('click', flipCard);
+           lock=true;
+           make_sure=true;
+            no++;
+            console.log(no);
+               
+            
+            
+           first_card=null;
+           second_card=null;
+           
+            if(no===18)
+             {
+                 moreStop();
+                 setTimeout(function() {a();}, 300);
+             }
+               
+        }
+        else
+         {
+             lock=false;
+           setTimeout(() => {
+                first_card.classList.remove('flip');
+                second_card.classList.remove('flip');
+               
+               lock=true;
+               make_sure=true;
+               first_card=null;
+               second_card=null;
+               
+            },700);
+        
+         }  
+        }
+    
+       }
+}
+      
+      (function shuffle() {
+          cards.forEach(card => {
+            let run= Math.floor(Math.random() * 36);
+            card.style.order = run;
+          });
+        })();
+cards.forEach(card => card.addEventListener('click', flipCard));
+      
+    
+      
+      function changeValue() {
+              document.getElementById("demo").innerHTML = ++value;
+            }
+            var timerInterval = null;
+            function start() {
+              stop(); // stoping the previous counting
+              value = 0;
+              timerInterval = setInterval(changeValue, 1000);  
+            }
+            var myMusic;
+          function music()
+          {
+            
+              myMusic = new Audio("music.mp3");
+               myMusic.loop = true;
+              myMusic.play();
+          }
+            var stop = function() {
+              clearInterval(timerInterval);
+            }
+            function stopMusic()
+              {
+                 myMusic.pause();
+              }
+            function uncover()
+              {
+                  
+                  cards.forEach(card => card.classList.add('flip'));            
+              }
+            function moreStop()
+              {
+                  stop();
+                  stopMusic();
+                  uncover();
+              }
+        
+            function replace()
+                {
+                document.getElementById("st").style.visibility = 'hidden';
+                document.getElementById("re").style.visibility = 'visible';
+                }
+            function replace2()
+                {
+                location.reload();
+                /*startValid=0;
+                stop();
+                stopMusic();
+                location.reload();
+                document.getElementById("stop").disabled = true;
+                cards.forEach(card => card.classList.remove('flip'));
+                document.getElementById("re").style.visibility = 'hidden';
+                document.getElementById("st").style.visibility = 'visible';*/
+                }
+            function more()
+            {
+                document.getElementById("stop").disabled = false;
+                start();
+                music();
+                replace();
+                startValid=1;
+            }
+      
+      function a()
+        {
+            alert("CONGRATULATION.. YOU DID IT!");
+        }
+       function b()
+        {
+            alert("Our names Shaima Kamal Dweidar  .."+
+ "Afnan Mousa Mabrouk.." +"Id : 36 , 15"   );
+        }
+    </script>
+</body>
+</html>
